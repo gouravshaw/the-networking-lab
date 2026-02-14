@@ -150,17 +150,7 @@ export default function IntroBuilder() {
                         </button>
                   )}
 
-                  {/* Tips */}
-                  <div className="card card--accent mt-6 animate-slide-up stagger-5" style={{ background: 'var(--color-warm-50)' }}>
-                        <div className="text-sm text-secondary mb-1" style={{ fontWeight: 'var(--font-weight-medium)' }}>
-                              💡 Tips for a great intro
-                        </div>
-                        <ul className="text-sm" style={{ lineHeight: 'var(--line-height-relaxed)', color: 'var(--color-text-secondary)' }}>
-                              <li style={{ marginBottom: 'var(--space-1)' }}>• Keep it natural — don't memorise, just know the structure</li>
-                              <li style={{ marginBottom: 'var(--space-1)' }}>• End with something you're curious about — it invites conversation</li>
-                              <li>• Practice saying it out loud a few times before an event</li>
-                        </ul>
-                  </div>
             </div>
       );
 }
+

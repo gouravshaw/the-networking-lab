@@ -44,20 +44,6 @@ export const toolboxCategories = [
             ],
       },
       {
-            id: 'follow-up',
-            label: 'Follow-up',
-            icon: 'Reply',
-            items: [
-                  { id: 'fq-1', text: "That's really interesting — how did you get started with that?", tip: 'Deepens the story' },
-                  { id: 'fq-2', text: "What's been the biggest challenge you've faced in that?", tip: 'Invites vulnerability' },
-                  { id: 'fq-3', text: "What do you enjoy most about what you do?", tip: 'Positive direction' },
-                  { id: 'fq-4', text: "How do you see that evolving in the next few years?", tip: 'Future-oriented' },
-                  { id: 'fq-5', text: "That sounds like it took a lot of courage. What drove that decision?", tip: 'Shows admiration' },
-                  { id: 'fq-6', text: "I've been thinking about something similar — what would you recommend?", tip: 'Asks for advice' },
-                  { id: 'fq-7', text: "What would you tell someone who's just getting into [field]?", tip: 'Mentorship angle' },
-            ],
-      },
-      {
             id: 'closers',
             label: 'Closers',
             icon: 'LogOut',

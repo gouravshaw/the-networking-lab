@@ -24,9 +24,9 @@ export default function Toolbox() {
       return (
             <div className="page" id="toolbox-page">
                   <div style={{ paddingTop: 'var(--space-4)' }}>
-                        <h1 className="text-2xl mb-2 animate-slide-up">Conversation Toolbox</h1>
+                        <h1 className="text-2xl mb-2 animate-slide-up">Tools</h1>
                         <p className="text-secondary mb-6 animate-slide-up stagger-1">
-                              Ready-to-use lines for every situation. Tap to copy.
+                              Ready-to-use lines for every situation.
                         </p>
                   </div>
 

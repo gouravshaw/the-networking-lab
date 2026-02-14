@@ -5,11 +5,10 @@ const UserContext = createContext(null);
 const STORAGE_KEY = 'networking-lab-data';
 
 const defaultState = {
-      profile: null, // { category, reason, difficulty }
       contacts: [],
       intros: { short: '', elevator: '', technical: '' },
       sessions: { count: 0, lastCompleted: null, history: [] },
-      onboardingComplete: false,
+      preferences: { category: null, reason: null, difficulty: null },
 };
 
 function loadState() {
@@ -38,10 +37,6 @@ export function UserProvider({ children }) {
       useEffect(() => {
             saveState(state);
       }, [state]);
-
-      const setProfile = (profile) => {
-            setState(prev => ({ ...prev, profile, onboardingComplete: true }));
-      };
 
       const addContact = (contact) => {
             const newContact = {
@@ -74,6 +69,17 @@ export function UserProvider({ children }) {
             setState(prev => ({ ...prev, intros: { ...prev.intros, ...intros } }));
       };
 
+      const setPreferences = (prefs) => {
+            setState(prev => ({ ...prev, preferences: { ...prev.preferences, ...prefs } }));
+      };
+
+      const resetPreferences = () => {
+            setState(prev => ({
+                  ...prev,
+                  preferences: { category: null, reason: null, difficulty: null },
+            }));
+      };
+
       const completeSession = (sessionData) => {
             setState(prev => ({
                   ...prev,
@@ -88,19 +94,20 @@ export function UserProvider({ children }) {
             }));
       };
 
-      const resetOnboarding = () => {
-            setState(prev => ({ ...prev, profile: null, onboardingComplete: false }));
-      };
+      const prefs = state.preferences || defaultState.preferences;
+      const hasCompletedSetup = !!(prefs.category && prefs.reason && prefs.difficulty);
 
       const value = {
             ...state,
-            setProfile,
+            preferences: prefs,
+            hasCompletedSetup,
             addContact,
             updateContact,
             deleteContact,
             saveIntros,
+            setPreferences,
+            resetPreferences,
             completeSession,
-            resetOnboarding,
       };
 
       return (
