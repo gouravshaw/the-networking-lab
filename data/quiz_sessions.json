@@ -137,5 +137,13 @@
     },
     "current_step": 9,
     "completed": false
+  },
+  {
+    "sessionId": "13d00619-1132-4455-8bc2-ef98dc639dec",
+    "started_at": "2026-02-17T19:44:46.693Z",
+    "updated_at": "2026-02-17T19:44:46.693Z",
+    "answers": {},
+    "current_step": 1,
+    "completed": false
   }
 ]
