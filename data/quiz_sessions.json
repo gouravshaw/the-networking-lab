@@ -1,0 +1,141 @@
+[
+  {
+    "sessionId": "df86f667-2796-4834-bff3-dc01e5cc4a8e",
+    "started_at": "2026-02-17T18:11:21.849Z",
+    "updated_at": "2026-02-17T18:35:44.228Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "last_minute",
+        "wonder_useful",
+        "rehearse"
+      ],
+      "hardest_moment": [
+        "entering_room",
+        "starting_conversations"
+      ],
+      "after_event": [
+        "regret_not_speaking"
+      ],
+      "frustration": [
+        "starting_conversations",
+        "anxiety_before"
+      ],
+      "improvement_goal": [
+        "more_confidence",
+        "more_opportunities"
+      ],
+      "self_perception": [
+        "observe",
+        "friendly_forgettable"
+      ],
+      "event_frequency": [
+        "1_2_per_year"
+      ]
+    },
+    "current_step": 9,
+    "completed": false
+  },
+  {
+    "sessionId": "43f4bdd6-6d44-4b87-b227-e2a3ba57b185",
+    "started_at": "2026-02-17T18:36:15.316Z",
+    "updated_at": "2026-02-17T18:36:36.278Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "hope_approach"
+      ],
+      "hardest_moment": [
+        "starting_conversations"
+      ],
+      "after_event": [
+        "forget_follow_up"
+      ],
+      "frustration": [
+        "starting_conversations"
+      ],
+      "improvement_goal": [
+        "more_confidence"
+      ],
+      "self_perception": [
+        "observe",
+        "overthink"
+      ],
+      "event_frequency": [
+        "never"
+      ]
+    },
+    "current_step": 9,
+    "completed": false
+  },
+  {
+    "sessionId": "db9f42dd-c707-4308-90a4-76ef23fcbf09",
+    "started_at": "2026-02-17T18:41:16.990Z",
+    "updated_at": "2026-02-17T18:42:27.107Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "plan_reconnect"
+      ],
+      "hardest_moment": [
+        "entering_room"
+      ],
+      "after_event": [
+        "didnt_present_well"
+      ],
+      "frustration": [
+        "starting_conversations"
+      ],
+      "improvement_goal": [
+        "stronger_relationships"
+      ],
+      "self_perception": [
+        "overthink"
+      ],
+      "event_frequency": [
+        "1_2_per_month"
+      ]
+    },
+    "current_step": 9,
+    "completed": false
+  },
+  {
+    "sessionId": "c2d4ff1d-78ad-42f0-8f3a-c35d3670824e",
+    "started_at": "2026-02-17T18:42:39.200Z",
+    "updated_at": "2026-02-17T18:43:02.406Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "describe_background"
+      ],
+      "hardest_moment": [
+        "following_up"
+      ],
+      "after_event": [
+        "forget_follow_up"
+      ],
+      "frustration": [
+        "maintaining_relationships"
+      ],
+      "improvement_goal": [
+        "stronger_relationships"
+      ],
+      "self_perception": [
+        "observe"
+      ],
+      "event_frequency": [
+        "1_2_per_month"
+      ]
+    },
+    "current_step": 9,
+    "completed": false
+  }
+]

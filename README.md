@@ -1,104 +1,45 @@
-# The Networking Lab
+# The Networking Lab - Personas Quiz
 
-A lightweight, mobile-first web app that helps you prepare for, engage in, and follow up after networking conversations — all in one guided session.
+A short quiz that helps people discover their networking persona. Built with Next.js.
 
-## Features
+## Run locally
 
-### 🎯 Guided Session Mode
-A 3-step flow that walks you through every networking interaction:
-1. **Before** — Set a goal, rate your confidence, and read a personalised reset message.
-2. **During** — Swipe through conversation prompts (openers, curiosity questions, closers) tailored to your profile.
-3. **After** — Save a contact, pick a follow-up template, and reflect on the conversation.
-
-### 🧠 Personalisation
-First-time users see a landing page with an inline onboarding flow — 3 quick questions that shape the entire experience:
-- **Who are you?** (student, graduate, career switcher, professional, entrepreneur)
-- **Why are you networking?** (job, learning, growth, mentor, confidence)
-- **What do you struggle with?** (confidence, starting conversations, talking about yourself, keeping conversations going, follow-up)
-
-A prompt engine scores and ranks 15 tagged prompts based on your answers, so every session surfaces the most relevant content.
-
-### 🗣️ Intro Builder
-Build and save 3 types of personal introductions:
-- **10-Second** — quick, memorable intro
-- **30-Second** — elevator-style pitch
-- **Project** — technical or project focus
-
-Fill in guided fields and get a ready-to-copy introduction.
-
-### 🧰 Toolbox
-Ready-to-use lines organised by situation:
-- In-person events
-- Virtual meetings
-- LinkedIn messages
-- Follow-ups
-- Graceful exits
-
-Each line includes a contextual tip and a one-tap copy button.
-
-### 👥 Contacts
-Save people you meet during sessions. Each contact stores:
-- Name, where you met, and personal notes
-- Follow-up message (auto-generated from templates)
-- Session history and date
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 |
-| Routing | React Router DOM 6 |
-| Icons | Lucide React |
-| Build | Vite 6 |
-| Styling | Vanilla CSS (custom design system) |
-| Persistence | localStorage |
-
-Zero backend. Everything runs client-side.
-
-## Getting Started
+### 1. Install dependencies
 
 ```bash
-# Clone
-git clone https://github.com/gouravshaw/the-networking-lab.git
-cd the-networking-lab
-
-# Install
 npm install
+```
 
-# Run
+### 2. Set up environment variables
+
+**Important:** Copy the example env file and fill in your values:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and set:
+
+- **Admin (for `/admin` login and dashboard)**  
+  - `ADMIN_USER` – username for admin login  
+  - `ADMIN_PASSWORD` – password for admin login  
+  - `ADMIN_SESSION_SECRET` – a long random string (e.g. 32+ characters) for session signing  
+
+### 3. Run the dev server
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:3000](http://localhost:3000). The quiz runs on the home page; the admin dashboard is at [http://localhost:3000/admin](http://localhost:3000/admin) (log in with the credentials from `.env`).
 
-## Project Structure
+### 4. Build for production (optional)
 
-```
-src/
-├── App.jsx                    # Routing
-├── main.jsx                   # Entry point
-├── index.css                  # Design system + all styles
-├── components/
-│   ├── TopNav.jsx             # Bottom navigation bar
-│   └── CopyButton.jsx        # Reusable copy-to-clipboard
-├── context/
-│   ├── UserContext.jsx        # User state, contacts, sessions, preferences
-│   └── ThemeContext.jsx       # Dark/light theme
-├── data/
-│   ├── promptEngine.js        # Tagged prompt bank + scoring engine
-│   ├── sessionContent.js      # Session step content
-│   └── toolboxContent.js      # Toolbox lines and tips
-├── pages/
-│   ├── Home.jsx               # Landing page + inline setup + main CTA
-│   ├── Session.jsx            # 3-step guided session
-│   ├── Setup.jsx              # Setup questions (shared with Home)
-│   ├── IntroBuilder.jsx       # Intro creation tool
-│   ├── Toolbox.jsx            # Copy-paste conversation lines
-│   ├── Contacts.jsx           # Contact list
-│   └── ContactDetail.jsx      # Individual contact view
-└── utils/
+```bash
+npm run build
+npm start
 ```
 
-## License
+---
 
-MIT
+**Reminder:** If the app fails to start or admin login doesn’t work, check that you created `.env` from `.env.example` and set all required variables.

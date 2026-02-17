@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="passive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#passive)" rx="16"/>
+  <text x="200" y="155" font-family="system-ui,sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">The Passive Networker</text>
+  <text x="200" y="180" font-family="system-ui,sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Replace with your image</text>
+</svg>
