@@ -1,0 +1,180 @@
+[
+  {
+    "sessionId": "b90d80cb-5099-4b0b-b0d3-8b63d14ec908",
+    "started_at": "2026-02-18T23:03:44.630Z",
+    "updated_at": "2026-02-18T23:04:08.955Z",
+    "answers": {
+      "stage": [
+        "working_professional"
+      ],
+      "before_event": [
+        "rewrite_intro",
+        "plan_reconnect",
+        "question_going",
+        "dont_prepare",
+        "figure_out",
+        "rehearse"
+      ],
+      "entering_room": [
+        "worry_intro",
+        "scan_and_wait",
+        "heart_rate",
+        "look_known",
+        "wonder_help",
+        "walk_comfortably"
+      ],
+      "mid_conversation": [
+        "struggle_explain",
+        "chat_good_no_move",
+        "avoid_advice",
+        "flow_naturally",
+        "let_them_lead",
+        "overthink_next"
+      ],
+      "day_after": [
+        "didnt_present_well",
+        "didnt_speak_enough",
+        "replay_convos",
+        "forget_followup",
+        "dont_know_useful",
+        "followup_quickly"
+      ],
+      "past_6_months": [
+        "prepare_anxious",
+        "attend_edges",
+        "talk_easily_blur",
+        "connect_lose_momentum",
+        "rarely_ask",
+        "sprint_stop",
+        "wants_optimize"
+      ],
+      "growth_lever": [
+        "calm_confident",
+        "starting_easier",
+        "explaining_clearly",
+        "staying_consistent",
+        "real_opportunities",
+        "strategic_overall"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "787c5734-f2c9-4a35-bec7-61ea6182a1d8",
+    "started_at": "2026-02-18T23:07:56.714Z",
+    "updated_at": "2026-02-18T23:08:46.416Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse",
+        "figure_out",
+        "rewrite_intro",
+        "plan_reconnect",
+        "question_going",
+        "dont_prepare"
+      ],
+      "entering_room": [
+        "heart_rate",
+        "scan_and_wait",
+        "worry_intro",
+        "look_known",
+        "wonder_help",
+        "walk_comfortably"
+      ],
+      "mid_conversation": [
+        "overthink_next",
+        "let_them_lead",
+        "struggle_explain",
+        "chat_good_no_move",
+        "avoid_advice",
+        "flow_naturally"
+      ],
+      "day_after": [
+        "replay_convos",
+        "didnt_speak_enough",
+        "didnt_present_well",
+        "forget_followup",
+        "dont_know_useful",
+        "followup_quickly"
+      ],
+      "past_6_months": [
+        "prepare_anxious",
+        "attend_edges",
+        "talk_easily_blur",
+        "connect_lose_momentum",
+        "rarely_ask",
+        "sprint_stop",
+        "wants_optimize"
+      ],
+      "growth_lever": [
+        "calm_confident",
+        "starting_easier",
+        "explaining_clearly",
+        "real_opportunities",
+        "strategic_overall",
+        "staying_consistent"
+      ]
+    },
+    "current_step": 8,
+    "completed": false,
+    "interest_level": "curious",
+    "persona": "overthinker"
+  },
+  {
+    "sessionId": "d410457b-8fee-4171-9d67-261de7c8372f",
+    "started_at": "2026-02-18T23:08:52.463Z",
+    "updated_at": "2026-02-18T23:09:03.029Z",
+    "answers": {
+      "stage": [
+        "working_professional"
+      ],
+      "before_event": [
+        "rewrite_intro"
+      ],
+      "entering_room": [
+        "look_known"
+      ],
+      "mid_conversation": [
+        "chat_good_no_move"
+      ],
+      "day_after": [
+        "forget_followup"
+      ],
+      "past_6_months": [
+        "sprint_stop"
+      ],
+      "growth_lever": [
+        "staying_consistent"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "0a8f6622-e8ac-4cd9-895b-3c934a15fd71",
+    "started_at": "2026-02-18T23:09:43.518Z",
+    "updated_at": "2026-02-18T23:09:46.485Z",
+    "answers": {
+      "stage": [
+        "career_switcher"
+      ]
+    },
+    "current_step": 2,
+    "completed": false
+  },
+  {
+    "sessionId": "a233752e-8e53-4dfb-b20f-58660152105d",
+    "started_at": "2026-02-18T23:09:52.976Z",
+    "updated_at": "2026-02-18T23:09:56.115Z",
+    "answers": {
+      "stage": [
+        "working_professional"
+      ]
+    },
+    "current_step": 2,
+    "completed": false
+  }
+]

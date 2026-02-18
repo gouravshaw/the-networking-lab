@@ -26,14 +26,14 @@ export interface Persona {
 export const personas: Record<PersonaKey, Persona> = {
   overthinker: {
     title: 'The Overthinker',
-    tagline: 'Mentally prepared. Emotionally exhausted.',
+    tagline: 'You prepare. You rehearse. You exhaust yourself.',
     circleColor: 'blue',
     pattern:
-      'You care deeply about making a good impression. You rehearse, reflect, and replay conversations. Your preparation is thorough—maybe too thorough. The pressure builds before you even enter the room.',
+      'This is what happens in real life: You care deeply about making a good impression. You script conversations in your head before you even enter the room. By the time you arrive, you’ve already spent half your energy.',
     risk:
-      'If this continues, you will keep exhausting yourself before events. The mental load will grow. You may start avoiding networking altogether because the prep feels unsustainable.',
+      'Without a simple system, networking becomes a heavy mental lift. You may start avoiding events simply because the preparation feels unsustainable.',
     solution:
-      'The Networking Lab helps you reduce pre-event anxiety with a Mental Prep framework. Not more preparation—structured, low-pressure preparation. You learn to enter rooms without carrying the weight of perfection.',
+      'This is fixable with simple workflows. The Networking Lab gives you a "Low-Pressure Prep" framework—just enough structure to feel ready, without the script. You learn to trust yourself in the moment.',
     imagePath: '/images/personas/overthinker.svg',
   },
   silentObserver: {
@@ -41,23 +41,23 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You attend. You watch. You rarely initiate.',
     circleColor: 'purple',
     pattern:
-      'You show up. You listen. You analyse. But starting conversations feels heavy. You wait for the right moment, the right person, the right opener. The moment often never comes.',
+      'This is what happens in real life: You show up, but you wait for the "right moment" to speak. It often feels like everyone else knows what they’re doing, so you stay on the edges.',
     risk:
-      'If this continues, you will keep leaving events with regret. Your network will stay small. Opportunities will pass because you never made the first move.',
+      'Without a simple system, you leave events with regret. Opportunities pass by simply because you didn’t make the first move.',
     solution:
-      'The Networking Lab teaches structured conversation initiation. Low-pressure openers, flow frameworks, exit strategies. You do not need to become extroverted. You need structure.',
+      'This is fixable with simple workflows. We teach you low-stakes openers that require zero charisma. You don’t need to be loud; you just need a way to start.',
     imagePath: '/images/personas/silent_observer.svg',
   },
   friendlyForgettable: {
     title: 'The Friendly but Forgettable',
-    tagline: 'People like you. They just do not remember why.',
+    tagline: 'People like you. They just don’t remember why.',
     circleColor: 'orange',
     pattern:
-      'You connect easily. People enjoy talking to you. But when they leave, they struggle to recall what you do or why you matter. Your professional value gets lost in the warmth.',
+      'This is what happens in real life: You have great conversations and people enjoy your company. But when they walk away, they struggle to recall exactly what you do or how they could help you.',
     risk:
-      'If this continues, you will keep having pleasant conversations that go nowhere. Your network will grow wide but shallow. Referrals and opportunities will go to people who positioned themselves clearly.',
+      'Without a simple system, your network grows wide but shallow. You become a "nice person" to know, rather than a valuable professional resource.',
     solution:
-      'The Networking Lab helps you define your professional identity and craft a natural "what do you do?" response. Not rehearsed—memorable. This is where good conversations become opportunities.',
+      'This is fixable with simple workflows. We help you craft a clearer professional identity. Not a sales pitch, but a memorable way to plant a seed about your value.',
     imagePath: '/images/personas/friendly_forgettable.svg',
   },
   connectorDisappears: {
@@ -65,11 +65,11 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You meet people. Then momentum fades.',
     circleColor: 'green',
     pattern:
-      'You exchange LinkedIn. You have good intentions. Then life happens. The follow-up never lands. The relationship cools. You have a growing list of contacts who do not really know you anymore.',
+      'This is what happens in real life: You exchange details and have every intention of staying in touch. Then the week gets busy, the moment passes, and the connection cools off.',
     risk:
-      'If this continues, your network will become a graveyard of one-off connections. People will stop expecting to hear from you. When you need help, you will have to start from scratch.',
+      'Without a simple system, connections fade naturally. Your network becomes a collection of "people I met once" rather than active relationships.',
     solution:
-      'The Networking Lab teaches follow-up timing, simple message frameworks, and relationship maintenance habits. Connections only grow if nurtured. We show you how to do it without it feeling like a chore.',
+      'This is fixable with simple workflows. We give you a follow-up dominance strategy—templates and timing that take the thinking out of staying in touch.',
     imagePath: '/images/personas/connector_disappears.svg',
   },
   passiveNetworker: {
@@ -77,35 +77,35 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You have contacts. Asking feels wrong.',
     circleColor: 'yellow',
     pattern:
-      'You have a network. You have helped others. But asking for help, referrals, or introductions feels uncomfortable. You tell yourself you do not want to be that person. So you stay passive.',
+      'This is what happens in real life: You’re happy to help others, but you hesitate to ask for anything in return. You worry about being "transactional," so you never leverage the network you’ve built.',
     risk:
-      'If this continues, you will keep under-leveraging what you have built. Others will advance because they asked. You will stay stuck because you did not.',
+      'Without a simple system, you leave opportunities on the table. Others advance because they asked; you stay stuck because you didn’t.',
     solution:
-      'The Networking Lab shows you how to ask without awkwardness. How to provide value first. How to activate dormant connections. Networking is not about using people. It is about mutual value.',
+      'This is fixable with simple workflows. We show you how to activate your network with "Capital-Building" asks—questions that feel natural, not demanding.',
     imagePath: '/images/personas/passive_networker.svg',
   },
   inconsistentSprinter: {
     title: 'The Inconsistent Sprinter',
-    tagline: 'You go hard. Then you disappear.',
+    tagline: 'You go hard. Then you stop.',
     circleColor: 'teal',
     pattern:
-      'You burst into action. You attend events, send messages, make plans. Then you burn out or get busy. Weeks of silence. When you return, you have to rebuild momentum from zero.',
+      'This is what happens in real life: You get a burst of energy and attend three events in a week. Then you burn out or get busy, and go silent for months.',
     risk:
-      'If this continues, people will stop taking your outreach seriously. You will be known as someone who shows up in waves and then vanishes. Consistency matters more than intensity.',
+      'Without a simple system, you’re always starting from zero. Consistency builds trust; sprinting destroys it.',
     solution:
-      'The Networking Lab helps you build sustainable habits. Not sprints—systems. You learn to maintain presence without exhausting yourself. Steady beats sporadic.',
+      'This is fixable with simple workflows. We replace the sprints with a sustainable "Networking Cadence"—small, steady actions that compound over time.',
     imagePath: '/images/personas/overthinker.svg',
   },
   identityExplorer: {
     title: 'The Identity Explorer',
-    tagline: 'Still figuring out who you are professionally.',
+    tagline: 'Still figuring out your story.',
     circleColor: 'indigo',
     pattern:
-      'You are in transition. Career switch, new role, or still defining your path. When people ask what you do, you hesitate. Your story feels unfinished. Networking feels harder when you are not sure of your own narrative.',
+      'This is what happens in real life: You’re in transition or exploring new paths. When someone asks "what do you do?", you hesitate because the answer feels complicated.',
     risk:
-      'If this continues, you will keep avoiding situations where you have to explain yourself. Opportunities will pass because you could not articulate your value. Clarity precedes confidence.',
+      'Without a simple system, you avoid huge opportunities because you don’t feel ready to explain yourself. Clarity follows action, not the other way around.',
     solution:
-      'The Networking Lab helps you craft a professional identity that feels authentic. You learn to tell your story even when it is still evolving. You do not need to have it all figured out to show up.',
+      'This is fixable with simple workflows. We help you tell a "Transition Story"—framing your journey as a strength, so you can network confidently while you figure it out.',
     imagePath: '/images/personas/friendly_forgettable.svg',
   },
 }

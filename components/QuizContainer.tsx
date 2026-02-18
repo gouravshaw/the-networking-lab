@@ -18,9 +18,9 @@ import { ResultLoading } from './ResultLoading'
 
 const INTRO_STEP = 0
 const QUESTION_START = 1
-const RESULT_STEP = 9
-const EMAIL_STEP = 10
-const TOTAL_STEPS = 11
+const RESULT_STEP = 8
+const EMAIL_STEP = 9
+const TOTAL_STEPS = 10
 
 export function QuizContainer() {
   const [sessionId, setSessionId] = useState<string | null>(null)
@@ -30,6 +30,7 @@ export function QuizContainer() {
   const [validationModalOpen, setValidationModalOpen] = useState(false)
   const [feedbackReasons, setFeedbackReasons] = useState<string[]>([])
   const [feedbackOther, setFeedbackOther] = useState('')
+  const [stageOtherText, setStageOtherText] = useState('')
   const [showEmailGate, setShowEmailGate] = useState(false)
   const [isLoadingResult, setIsLoadingResult] = useState(false)
 
@@ -38,7 +39,21 @@ export function QuizContainer() {
   }, [])
 
   const results = calculateResults(answers)
-  const persona = personas[results.dominantPersona]
+  let persona = personas[results.dominantPersona]
+
+  if (results.isOptimizer) {
+    persona = {
+      ...persona,
+      title: 'Low Friction Profile (Optimizer)',
+      tagline: 'You have a healthy approach, but you want to do more.',
+      pattern:
+        'This is what happens in real life: You don’t feel paralyzed by anxiety or friction. You attend events, you talk to people, and you generally feel fine. But you know you could be getting more out of the time you invest.',
+      risk:
+        'Without a system, you might coast. You’re doing "fine", but you’re leaving opportunity on the table because you aren’t being strategic enough.',
+      solution:
+        'This is fixable with simple workflows. The Networking Lab helps you move from "attending" to "leveraging". We give you the strategic frameworks to turn casual conversations into tangible career assets.',
+    }
+  }
 
   const saveProgress = useCallback(
     (payload: Parameters<typeof saveQuizProgress>[1]) => {
@@ -83,6 +98,7 @@ export function QuizContainer() {
     setShowEmailGate(false)
     setFeedbackReasons([])
     setFeedbackOther('')
+    setStageOtherText('')
     setIsLoadingResult(false)
   }
 
@@ -113,7 +129,7 @@ export function QuizContainer() {
       created_at: new Date().toISOString(),
       feedback_reasons: reasons,
       feedback_other: other,
-    }).catch(() => {})
+    }).catch(() => { })
 
     if (level !== 'not_interested') {
       setShowEmailGate(true)
@@ -138,7 +154,7 @@ export function QuizContainer() {
     })
 
     await saveSubmission({
-      stage: answers.stage?.join(',') ?? '',
+      stage: answers.stage?.map(s => s === 'other' ? `Other: ${stageOtherText}` : s).join(',') ?? '',
       main_goal: answers.main_goal?.join(',') ?? '',
       persona: results.dominantPersona,
       persona_score: results.personaScores[results.dominantPersona],
@@ -166,42 +182,42 @@ export function QuizContainer() {
             <div className="w-full max-w-4xl mx-auto">
               <div className="rounded-2xl border-2 border-gray-200 bg-white shadow-xl shadow-gray-300/40 px-8 py-14 sm:px-12 sm:py-16 md:px-16 md:py-20">
                 <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-12 md:gap-16 items-start">
-            <div className="flex flex-col gap-8 md:gap-10">
-              <h1 className="text-3xl sm:text-4xl md:text-[2.25rem] font-bold text-charcoal tracking-tight leading-tight">
-                Discover Your Networking Persona
-              </h1>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                Understand how you naturally show up when you network and where momentum breaks.
-              </p>
-              <p className="text-sm text-gray-500">
-                5 personas · 8 questions · Instant profile preview · ~2 min
-              </p>
-            </div>
+                  <div className="flex flex-col gap-8 md:gap-10">
+                    <h1 className="text-3xl sm:text-4xl md:text-[2.25rem] font-bold text-charcoal tracking-tight leading-tight">
+                      Discover Your Networking Persona
+                    </h1>
+                    <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                      Understand how you naturally show up when you network and where momentum breaks.
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      5 personas · 7 questions · Instant profile preview · ~2 min
+                    </p>
+                  </div>
 
-            <div className="flex flex-col gap-8">
-              <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50/80 p-3 md:p-4">
-                <Image
-                  src="/images/all_personas.png"
-                  alt="The 5 Networking Personas"
-                  width={560}
-                  height={210}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
-              <motion.button
-                type="button"
-                onClick={handleNext}
-                className="w-full px-8 py-4 rounded-full font-semibold gradient-bg text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transition-all text-[16px] inline-flex items-center justify-center gap-2"
-                whileHover={{ scale: 1.01 }}
-                whileTap={{ scale: 0.99 }}
-              >
-                Start Assessment
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </motion.button>
-            </div>
+                  <div className="flex flex-col gap-8">
+                    <div className="rounded-xl overflow-hidden border border-gray-200 bg-gray-50/80 p-3 md:p-4">
+                      <Image
+                        src="/images/all_personas.png"
+                        alt="The 5 Networking Personas"
+                        width={560}
+                        height={210}
+                        className="w-full h-auto object-contain"
+                        priority
+                      />
+                    </div>
+                    <motion.button
+                      type="button"
+                      onClick={handleNext}
+                      className="w-full px-8 py-4 rounded-full font-semibold gradient-bg text-white shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30 transition-all text-[16px] inline-flex items-center justify-center gap-2"
+                      whileHover={{ scale: 1.01 }}
+                      whileTap={{ scale: 0.99 }}
+                    >
+                      Start Assessment
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </motion.button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,7 +288,7 @@ export function QuizContainer() {
       <div className="min-h-screen flex flex-col items-center justify-center px-4 pt-12">
         <QuizHeader onLogoClick={handleReset} />
         <p className="mb-4 text-sm font-bold text-gray-500">
-          Question {currentStep} of 8
+          Question {currentStep} of 7
         </p>
         <AnimatePresence mode="wait">
           <QuestionCard
@@ -283,6 +299,8 @@ export function QuizContainer() {
             onNext={handleNext}
             onPrevious={handlePrevious}
             showPrevious={questionIndex > 0}
+            otherValue={stageOtherText}
+            onOtherChange={setStageOtherText}
           />
         </AnimatePresence>
       </div>
