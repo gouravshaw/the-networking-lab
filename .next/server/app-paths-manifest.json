@@ -1,5 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/api/quiz-progress/route": "app/api/quiz-progress/route.js",
-  "/api/interest/route": "app/api/interest/route.js"
-}

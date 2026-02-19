@@ -627,5 +627,35 @@
     },
     "current_step": 8,
     "completed": false
+  },
+  {
+    "sessionId": "5ad4a192-9694-4a45-8ebb-9a603435ef48",
+    "started_at": "2026-02-19T00:38:43.781Z",
+    "updated_at": "2026-02-19T00:39:11.173Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
   }
 ]
