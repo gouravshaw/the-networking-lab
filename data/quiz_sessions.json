@@ -176,5 +176,456 @@
     },
     "current_step": 2,
     "completed": false
+  },
+  {
+    "sessionId": "d621b578-08dd-4861-a32c-8dc7b13e93e5",
+    "started_at": "2026-02-18T23:13:21.756Z",
+    "updated_at": "2026-02-18T23:13:35.051Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "plan_reconnect"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "struggle_explain"
+      ],
+      "day_after": [
+        "didnt_speak_enough"
+      ],
+      "past_6_months": [
+        "attend_edges"
+      ],
+      "growth_lever": [
+        "explaining_clearly"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "75240699-8ab0-4aa5-b9aa-4d1b3647997d",
+    "started_at": "2026-02-18T23:16:04.184Z",
+    "updated_at": "2026-02-18T23:18:39.114Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "337c7a66-42bc-4a28-ac04-92af8ce4e160",
+    "started_at": "2026-02-18T23:19:54.498Z",
+    "updated_at": "2026-02-18T23:21:00.738Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "question_going"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "chat_good_no_move"
+      ],
+      "day_after": [
+        "didnt_present_well"
+      ],
+      "past_6_months": [
+        "sprint_stop"
+      ],
+      "growth_lever": [
+        "starting_easier",
+        "calm_confident",
+        "real_opportunities"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "48f72cdb-af23-4bc2-811a-e27f667d0b90",
+    "started_at": "2026-02-18T23:23:47.082Z",
+    "updated_at": "2026-02-18T23:23:58.420Z",
+    "answers": {
+      "stage": [
+        "working_professional"
+      ],
+      "before_event": [
+        "rewrite_intro"
+      ],
+      "entering_room": [
+        "look_known"
+      ],
+      "mid_conversation": [
+        "avoid_advice"
+      ],
+      "day_after": [
+        "forget_followup"
+      ],
+      "past_6_months": [
+        "connect_lose_momentum"
+      ],
+      "growth_lever": [
+        "staying_consistent"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "7bfcfd52-ab46-4caf-810c-d10fd4e4a34a",
+    "started_at": "2026-02-18T23:23:57.534Z",
+    "updated_at": "2026-02-18T23:28:30.105Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "c5a682f9-d392-47b3-9d8a-c690ffd95395",
+    "started_at": "2026-02-18T23:35:19.348Z",
+    "updated_at": "2026-02-18T23:35:29.202Z",
+    "answers": {
+      "stage": [
+        "early_career"
+      ],
+      "before_event": [
+        "plan_reconnect"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "struggle_explain"
+      ],
+      "day_after": [
+        "didnt_present_well"
+      ],
+      "past_6_months": [
+        "connect_lose_momentum"
+      ],
+      "growth_lever": [
+        "explaining_clearly"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "786259c1-7f58-4975-ac3b-02f890ba4bf6",
+    "started_at": "2026-02-18T23:35:21.131Z",
+    "updated_at": "2026-02-18T23:36:14.008Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ]
+    },
+    "current_step": 2,
+    "completed": false
+  },
+  {
+    "sessionId": "a674e237-9afd-4b78-8751-6038de95cfab",
+    "started_at": "2026-02-18T23:36:40.255Z",
+    "updated_at": "2026-02-18T23:36:50.619Z",
+    "answers": {
+      "stage": [
+        "working_professional"
+      ],
+      "before_event": [
+        "plan_reconnect"
+      ],
+      "entering_room": [
+        "look_known"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "dont_know_useful"
+      ],
+      "past_6_months": [
+        "attend_edges"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "b8a8a356-3c77-409d-bae8-e160ff95bbe9",
+    "started_at": "2026-02-18T23:39:07.385Z",
+    "updated_at": "2026-02-18T23:39:08.230Z",
+    "answers": {
+      "stage": [
+        "career_switcher"
+      ]
+    },
+    "current_step": 1,
+    "completed": false
+  },
+  {
+    "sessionId": "618bb030-3403-4ed3-abdb-dd13b6850cdd",
+    "started_at": "2026-02-18T23:41:15.442Z",
+    "updated_at": "2026-02-18T23:41:27.405Z",
+    "answers": {
+      "stage": [
+        "early_career"
+      ],
+      "before_event": [
+        "plan_reconnect"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "chat_good_no_move"
+      ],
+      "day_after": [
+        "didnt_present_well"
+      ],
+      "past_6_months": [
+        "connect_lose_momentum"
+      ],
+      "growth_lever": [
+        "explaining_clearly"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "368908da-5417-437f-8fd5-9f1688ae8204",
+    "started_at": "2026-02-18T23:44:28.649Z",
+    "updated_at": "2026-02-18T23:44:42.169Z",
+    "answers": {
+      "stage": [
+        "early_career"
+      ],
+      "before_event": [
+        "rewrite_intro"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "struggle_explain"
+      ],
+      "day_after": [
+        "didnt_present_well"
+      ],
+      "past_6_months": [
+        "rarely_ask"
+      ],
+      "growth_lever": [
+        "staying_consistent"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "4f2e9509-a5c4-45e6-9ee1-c3e94ff8d43b",
+    "started_at": "2026-02-18T23:54:22.111Z",
+    "updated_at": "2026-02-18T23:54:38.417Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "96617c28-0144-4918-aba9-9150fe055259",
+    "started_at": "2026-02-19T00:02:08.350Z",
+    "updated_at": "2026-02-19T00:03:07.730Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "a81e4199-af8f-49a9-a2bf-19f78e614e89",
+    "started_at": "2026-02-19T00:16:01.018Z",
+    "updated_at": "2026-02-19T00:18:21.665Z",
+    "answers": {
+      "stage": [
+        "student"
+      ],
+      "before_event": [
+        "rehearse"
+      ],
+      "entering_room": [
+        "heart_rate"
+      ],
+      "mid_conversation": [
+        "overthink_next"
+      ],
+      "day_after": [
+        "replay_convos"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "calm_confident"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
+  },
+  {
+    "sessionId": "313073eb-be23-406e-af04-7889548ff5a7",
+    "started_at": "2026-02-19T00:32:18.555Z",
+    "updated_at": "2026-02-19T00:32:18.555Z",
+    "answers": {
+      "stage": [
+        "early_career"
+      ],
+      "before_event": [
+        "rewrite_intro"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "struggle_explain"
+      ],
+      "day_after": [
+        "didnt_present_well"
+      ],
+      "past_6_months": [
+        "rarely_ask"
+      ],
+      "growth_lever": [
+        "staying_consistent"
+      ]
+    },
+    "current_step": 8,
+    "interest_level": "would_try",
+    "persona": "friendlyForgettable",
+    "completed": false
+  },
+  {
+    "sessionId": "46d70a63-8f67-4422-afa3-0c40151ed9ec",
+    "started_at": "2026-02-19T00:32:26.150Z",
+    "updated_at": "2026-02-19T00:32:37.507Z",
+    "answers": {
+      "stage": [
+        "early_career"
+      ],
+      "before_event": [
+        "rewrite_intro"
+      ],
+      "entering_room": [
+        "worry_intro"
+      ],
+      "mid_conversation": [
+        "chat_good_no_move"
+      ],
+      "day_after": [
+        "followup_quickly"
+      ],
+      "past_6_months": [
+        "prepare_anxious"
+      ],
+      "growth_lever": [
+        "starting_easier"
+      ]
+    },
+    "current_step": 8,
+    "completed": false
   }
 ]

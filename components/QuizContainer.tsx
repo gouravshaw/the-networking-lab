@@ -24,8 +24,20 @@ const TOTAL_STEPS = 10
 
 export function QuizContainer() {
   const [sessionId, setSessionId] = useState<string | null>(null)
-  const [currentStep, setCurrentStep] = useState(INTRO_STEP)
-  const [answers, setAnswers] = useState<Record<string, string[]>>({})
+  const [currentStep, setCurrentStep] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = sessionStorage.getItem('quiz_currentStep')
+      return saved ? parseInt(saved, 10) : INTRO_STEP
+    }
+    return INTRO_STEP
+  })
+  const [answers, setAnswers] = useState<Record<string, string[]>>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = sessionStorage.getItem('quiz_answers')
+      return saved ? JSON.parse(saved) : {}
+    }
+    return {}
+  })
   const [interestLevel, setInterestLevel] = useState('')
   const [validationModalOpen, setValidationModalOpen] = useState(false)
   const [feedbackReasons, setFeedbackReasons] = useState<string[]>([])
@@ -37,6 +49,15 @@ export function QuizContainer() {
   useEffect(() => {
     setSessionId(createSessionId())
   }, [])
+
+  // Persist answers and currentStep to sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem('quiz_answers', JSON.stringify(answers))
+  }, [answers])
+
+  useEffect(() => {
+    sessionStorage.setItem('quiz_currentStep', String(currentStep))
+  }, [currentStep])
 
   const results = calculateResults(answers)
   let persona = personas[results.dominantPersona]
@@ -90,6 +111,8 @@ export function QuizContainer() {
   }
 
   const handleReset = () => {
+    sessionStorage.removeItem('quiz_answers')
+    sessionStorage.removeItem('quiz_currentStep')
     setSessionId(createSessionId())
     setCurrentStep(INTRO_STEP)
     setAnswers({})

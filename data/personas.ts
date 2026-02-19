@@ -29,11 +29,11 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You prepare. You rehearse. You exhaust yourself.',
     circleColor: 'blue',
     pattern:
-      'This is what happens in real life: You care deeply about making a good impression. You script conversations in your head before you even enter the room. By the time you arrive, you’ve already spent half your energy.',
+      'You rehearse conversations long before the event starts. You research attendees, plan talking points, and mentally simulate every scenario. By the time you walk through the door, half your energy is already gone. You leave feeling drained, even when it went fine. And the worst part? Nobody even notices the effort.',
     risk:
-      'Without a simple system, networking becomes a heavy mental lift. You may start avoiding events simply because the preparation feels unsustainable.',
+      'Every time you skip an event because the prep feels like too much, your world gets a little smaller. One declined invitation at a time. One missed introduction at a time. Until your professional circle has quietly shrunk, and the doors that used to open have stopped opening.',
     solution:
-      'This is fixable with simple workflows. The Networking Lab gives you a "Low-Pressure Prep" framework—just enough structure to feel ready, without the script. You learn to trust yourself in the moment.',
+      'You will never walk into a room feeling unprepared again. Your full report includes a Ready-in-5 Prep Kit: just 5 minutes of focus before any event, and you will feel more confident than people who did zero prep.',
     imagePath: '/images/personas/overthinker.svg',
   },
   silentObserver: {
@@ -41,23 +41,23 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You attend. You watch. You rarely initiate.',
     circleColor: 'purple',
     pattern:
-      'This is what happens in real life: You show up, but you wait for the "right moment" to speak. It often feels like everyone else knows what they’re doing, so you stay on the edges.',
+      'You show up with good intentions, but the room feels like it is already running without you. Everyone seems to know each other. You wait for the "right moment" to jump in, but it never feels right. So you hover near the refreshments, check your phone, and leave having spoken to maybe one or two people.',
     risk:
-      'Without a simple system, you leave events with regret. Opportunities pass by simply because you didn’t make the first move.',
+      'Every event you leave quietly is a missed chapter in your career. The person standing three feet away could have been your next mentor or collaborator. This pattern gets worse, not better. Your professional world narrows to only the people who happen to reach out to you.',
     solution:
-      'This is fixable with simple workflows. We teach you low-stakes openers that require zero charisma. You don’t need to be loud; you just need a way to start.',
+      'You do not need to be loud to make real connections. Your report includes 3 Plug-and-Play Openers that work in any room. No small talk, no awkwardness. Just easy first moves that start real conversations.',
     imagePath: '/images/personas/silent_observer.svg',
   },
   friendlyForgettable: {
     title: 'The Friendly but Forgettable',
-    tagline: 'People like you. They just don’t remember why.',
+    tagline: 'People like you. They just don\'t remember why.',
     circleColor: 'orange',
     pattern:
-      'This is what happens in real life: You have great conversations and people enjoy your company. But when they walk away, they struggle to recall exactly what you do or how they could help you.',
+      'You are warm, approachable, and easy to talk to. Your conversations feel great in the moment. But a week later, the people you met cannot remember what you do or how they could help you. You get filed under "nice person I met" instead of "someone I should connect with my colleague."',
     risk:
-      'Without a simple system, your network grows wide but shallow. You become a "nice person" to know, rather than a valuable professional resource.',
+      'You are doing the hardest part of networking: showing up and building rapport. But without a memorable anchor, none of it converts. People will not refer you or tag you in opportunities, not because they dislike you, but because they cannot remember what you bring to the table.',
     solution:
-      'This is fixable with simple workflows. We help you craft a clearer professional identity. Not a sales pitch, but a memorable way to plant a seed about your value.',
+      'People will finally remember you for the right reasons. Your report includes a Seed Statement Builder: one sentence that plants an idea about your value, so people think of you when opportunities come up.',
     imagePath: '/images/personas/friendly_forgettable.svg',
   },
   connectorDisappears: {
@@ -65,11 +65,11 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You meet people. Then momentum fades.',
     circleColor: 'green',
     pattern:
-      'This is what happens in real life: You exchange details and have every intention of staying in touch. Then the week gets busy, the moment passes, and the connection cools off.',
+      'You meet someone great, exchange details, and leave genuinely excited. You tell yourself you will follow up tomorrow. But tomorrow turns into next week, next week turns into "it has been too long now," and the connection goes cold. It is not that you do not care. There is just no system to catch the ball.',
     risk:
-      'Without a simple system, connections fade naturally. Your network becomes a collection of "people I met once" rather than active relationships.',
+      'Every cold connection is not just one lost contact. It is an entire chain of introductions that will never happen. Networking works like compound interest, but the compounding never starts for you because every connection resets to zero. You keep meeting people but never building on what you have.',
     solution:
-      'This is fixable with simple workflows. We give you a follow-up dominance strategy—templates and timing that take the thinking out of staying in touch.',
+      'You will never lose a connection again. Your report includes a 48-Hour Follow-Up System with ready-to-send templates and a simple timing rhythm, so staying in touch happens automatically, not accidentally.',
     imagePath: '/images/personas/connector_disappears.svg',
   },
   passiveNetworker: {
@@ -77,11 +77,11 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You have contacts. Asking feels wrong.',
     circleColor: 'yellow',
     pattern:
-      'This is what happens in real life: You’re happy to help others, but you hesitate to ask for anything in return. You worry about being "transactional," so you never leverage the network you’ve built.',
+      'You always say yes when someone asks for help. But when it comes to asking for anything in return, you freeze. It feels pushy or transactional. So you sit on a network full of people who would happily help you, but you never give them the chance.',
     risk:
-      'Without a simple system, you leave opportunities on the table. Others advance because they asked; you stay stuck because you didn’t.',
+      'The people advancing faster around you are not more talented. They are just willing to ask. Your network does not even know you need anything, so they cannot help. Over time, this creates invisibility: you are always there for everyone else, while nobody is there for you.',
     solution:
-      'This is fixable with simple workflows. We show you how to activate your network with "Capital-Building" asks—questions that feel natural, not demanding.',
+      'Asking does not have to feel uncomfortable. Your report includes Capital-Building Scripts: simple, natural questions that activate your network without feeling pushy. The people around you want to help. You just need to let them.',
     imagePath: '/images/personas/passive_networker.svg',
   },
   inconsistentSprinter: {
@@ -89,23 +89,23 @@ export const personas: Record<PersonaKey, Persona> = {
     tagline: 'You go hard. Then you stop.',
     circleColor: 'teal',
     pattern:
-      'This is what happens in real life: You get a burst of energy and attend three events in a week. Then you burn out or get busy, and go silent for months.',
+      'Something lights a fire. You go all in: three events in one week, a dozen LinkedIn messages, multiple coffee meetings. But within weeks, the energy fades. You go silent for months. When you resurface, the people you met have moved on. You are starting from zero, again.',
     risk:
-      'Without a simple system, you’re always starting from zero. Consistency builds trust; sprinting destroys it.',
+      'Every time you sprint and disappear, you train your network to ignore you. People stop taking your messages seriously because they know you will vanish again. And the most painful part: you always quit right before the results would have arrived. Consistency is the thing that makes networking work.',
     solution:
-      'This is fixable with simple workflows. We replace the sprints with a sustainable "Networking Cadence"—small, steady actions that compound over time.',
-    imagePath: '/images/personas/overthinker.svg',
+      'You do not need more motivation. You need a system. Your report includes a Networking Cadence Plan: 15 minutes a week of small, steady actions that compound over time. No burnout. No starting over. Just quiet momentum that builds.',
+    imagePath: '/images/personas/inconsistent_sprinter.svg',
   },
   identityExplorer: {
     title: 'The Identity Explorer',
     tagline: 'Still figuring out your story.',
     circleColor: 'indigo',
     pattern:
-      'This is what happens in real life: You’re in transition or exploring new paths. When someone asks "what do you do?", you hesitate because the answer feels complicated.',
+      'You are in a period of change. When someone asks "so what do you do?", you hesitate. The answer feels too complicated or incomplete. So you give a vague response that confuses people, or fall back on an old title that no longer fits. The conversation loses energy, and you walk away feeling like you cannot network until you have it all figured out.',
     risk:
-      'Without a simple system, you avoid huge opportunities because you don’t feel ready to explain yourself. Clarity follows action, not the other way around.',
+      'You are waiting for clarity before you start networking. But clarity comes from talking to people, not sitting alone. Every week you spend waiting is a week your world gets quieter. Others in the same transition are already out there having messy conversations and building relationships. They are not more ready. They just started.',
     solution:
-      'This is fixable with simple workflows. We help you tell a "Transition Story"—framing your journey as a strength, so you can network confidently while you figure it out.',
-    imagePath: '/images/personas/friendly_forgettable.svg',
+      'You do not need to have it all figured out to start networking. Your report includes a Transition Story Framework that turns your evolving path into a strength. So when someone asks what you do, you will have an answer that feels honest, clear, and interesting.',
+    imagePath: '/images/personas/identity_explorer.svg',
   },
 }

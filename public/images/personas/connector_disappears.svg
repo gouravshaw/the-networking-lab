@@ -1,11 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
   <defs>
-    <linearGradient id="connector" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:0.1"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DCFCE7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#BBF7D0;stop-opacity:1"/>
     </linearGradient>
   </defs>
-  <rect width="400" height="300" fill="url(#connector)" rx="16"/>
-  <text x="200" y="155" font-family="system-ui,sans-serif" font-size="18" fill="#6B7280" text-anchor="middle">The Connector Who Disappears</text>
-  <text x="200" y="180" font-family="system-ui,sans-serif" font-size="12" fill="#9CA3AF" text-anchor="middle">Replace with your image</text>
+  <rect width="200" height="200" fill="url(#bg)" rx="24"/>
+  <!-- Head -->
+  <circle cx="100" cy="72" r="28" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Eyes (looking at phone) -->
+  <circle cx="92" cy="70" r="3.5" fill="#1F2937"/>
+  <circle cx="108" cy="70" r="3.5" fill="#1F2937"/>
+  <!-- Slight smile -->
+  <path d="M92 80 Q100 86 108 80" fill="none" stroke="#1F2937" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Body -->
+  <rect x="75" y="105" width="50" height="45" rx="12" fill="#4ADE80" stroke="#22C55E" stroke-width="2"/>
+  <!-- Arms reaching out then fading -->
+  <path d="M75 115 L50 125" stroke="#FBBF24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M125 115 L150 125" stroke="#FBBF24" stroke-width="8" stroke-linecap="round"/>
+  <!-- Connection lines fading -->
+  <line x1="45" y1="125" x2="25" y2="115" stroke="#22C55E" stroke-width="2" opacity="0.6" stroke-dasharray="4,4"/>
+  <line x1="155" y1="125" x2="175" y2="115" stroke="#22C55E" stroke-width="2" opacity="0.3" stroke-dasharray="4,4"/>
+  <!-- Small clock (time passing) -->
+  <circle cx="165" cy="50" r="12" fill="white" stroke="#D1D5DB" stroke-width="1.5"/>
+  <line x1="165" y1="50" x2="165" y2="43" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+  <line x1="165" y1="50" x2="171" y2="53" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
+  <!-- Label -->
+  <text x="100" y="178" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">Connector Disappears</text>
 </svg>
