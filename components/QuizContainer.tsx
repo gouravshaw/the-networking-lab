@@ -24,20 +24,8 @@ const TOTAL_STEPS = 10
 
 export function QuizContainer() {
   const [sessionId, setSessionId] = useState<string | null>(null)
-  const [currentStep, setCurrentStep] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = sessionStorage.getItem('quiz_currentStep')
-      return saved ? parseInt(saved, 10) : INTRO_STEP
-    }
-    return INTRO_STEP
-  })
-  const [answers, setAnswers] = useState<Record<string, string[]>>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = sessionStorage.getItem('quiz_answers')
-      return saved ? JSON.parse(saved) : {}
-    }
-    return {}
-  })
+  const [currentStep, setCurrentStep] = useState(INTRO_STEP)
+  const [answers, setAnswers] = useState<Record<string, string[]>>({})
   const [interestLevel, setInterestLevel] = useState('')
   const [validationModalOpen, setValidationModalOpen] = useState(false)
   const [feedbackReasons, setFeedbackReasons] = useState<string[]>([])
@@ -46,13 +34,28 @@ export function QuizContainer() {
   const [showEmailGate, setShowEmailGate] = useState(false)
   const [isLoadingResult, setIsLoadingResult] = useState(false)
 
+  // Hydrate state from sessionStorage on mount
+  useEffect(() => {
+    const savedStep = sessionStorage.getItem('quiz_currentStep')
+    if (savedStep) {
+      setCurrentStep(parseInt(savedStep, 10))
+    }
+
+    const savedAnswers = sessionStorage.getItem('quiz_answers')
+    if (savedAnswers) {
+      setAnswers(JSON.parse(savedAnswers))
+    }
+  }, [])
+
   useEffect(() => {
     setSessionId(createSessionId())
   }, [])
 
   // Persist answers and currentStep to sessionStorage
   useEffect(() => {
-    sessionStorage.setItem('quiz_answers', JSON.stringify(answers))
+    if (Object.keys(answers).length > 0) {
+      sessionStorage.setItem('quiz_answers', JSON.stringify(answers))
+    }
   }, [answers])
 
   useEffect(() => {
